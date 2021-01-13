@@ -10,4 +10,12 @@ export class AppComponent {
   box = "box";
   textbox = 'text box';
 
+
+  items = ['item1', 'item2', 'item3'];
+
+  addItem(newItem: string) {
+    if(!this.items.includes(newItem) && (newItem))
+    this.items.push(newItem);
+  }
+
 }
