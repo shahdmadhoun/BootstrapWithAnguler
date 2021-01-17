@@ -1,0 +1,16 @@
+<p>login-page works!</p>
+
+<div>
+    <h2>Login Page</h2>
+    <div>
+        <label for="username">User Name</label>
+        <input type="email" placeholder="Enter username" [(ngModel)]="username" required name="username">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input [(ngModel)]="password" type="password" placeholder="Password" required name="password">
+    </div>
+    <button (click)='log()' type="submit">Submit</button>
+</div> 
+<p>{{username}}</p>
+<p>{{password}}</p>
