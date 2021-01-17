@@ -18,4 +18,28 @@ export class AppComponent {
     this.items.push(newItem);
   }
 
+  clickNum = 0;
+  clickText = "show item";
+  today = Date.now();
+  toggles = [];
+
+
+
+  show() {
+    if(this.clickNum == 0) {
+    this.clickNum = 1;
+    this.clickText = "hide item";
+    this.toggles.push(Date.now());
+  } else {
+    this.clickNum = 0;
+    this.clickText = "show item";
+    this.toggles.push(Date.now());
+
+
+  }
+
+  }
+
+
+
 }
