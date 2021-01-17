@@ -24,6 +24,11 @@ export class HighlightDirectiveDirective implements OnInit {
    onMouseEnter(event: any) {    
     this.highlight('yellow');
 }
+
+@HostListener('mouseleave', ['$event'])
+onMouseLeave(event: any) {    
+ this.highlight('white');
+}
   private highlight(color: string) {
     this.el.nativeElement.style.backgroundColor = color;
 }
