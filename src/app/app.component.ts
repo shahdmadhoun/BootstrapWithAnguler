@@ -7,6 +7,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // constructor(private TestService: TestService) {}
   title = 'binding';
   box = "box";
   textbox = 'text box';
@@ -37,7 +38,10 @@ export class AppComponent {
     this.toggles.push(Date.now().toString());
 
   }
+  }
 
+  add() {
+    this.toggles.push(Date.now().toString());
   }
 
 

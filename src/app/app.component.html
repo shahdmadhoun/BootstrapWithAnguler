@@ -9,7 +9,7 @@
 
 <app-child [item]="title" (newItemEvent)='addItem($event)'></app-child> -->
 
-<button class="btn btn-primary" (click) = "show()" >{{ clickText }}</button>
+<button class="btn btn-primary" (click) = "show()" (click) = "add()" >{{ clickText }}</button>
 <p *ngIf = "clickNum == 1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem illum officia accusantium, repellat itaque eius ab ullam mollitia aspernatur maiores, dolore quas enim voluptate vitae minima! Quisquam, id magni!</p>
 
 <!-- <ul>
