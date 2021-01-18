@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent {
   clickNum = 0;
   clickText = "show item";
   today = Date.now();
-  toggles = [];
+  toggles = new Array<string>();
 
 
 
@@ -29,17 +30,18 @@ export class AppComponent {
     if(this.clickNum == 0) {
     this.clickNum = 1;
     this.clickText = "hide item";
-    this.toggles.push(Date.now());
+    this.toggles.push(Date.now().toString());
   } else {
     this.clickNum = 0;
     this.clickText = "show item";
-    this.toggles.push(Date.now());
-
-
-  }
+    this.toggles.push(Date.now().toString());
 
   }
 
+  }
+
+
+  
 
 
 }

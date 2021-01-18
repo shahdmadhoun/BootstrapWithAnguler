@@ -1,0 +1,5 @@
+.scrollClass {
+    width: 50%;
+    height: 400px;
+    overflow: scroll;
+}
